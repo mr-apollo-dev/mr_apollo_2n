@@ -221,10 +221,8 @@ class WebsiteNodeCrawler(BaseClass):
 				else:
 					self.logger.warning(f"Unknown tag '{node_tag}' in sitemap '{url}'.")
 
-			self.logger.debug(
-				f"Processed page '{parent_url}', "
-				f"total successful elements {total_elements} added, "
-				f"and enqueued {total_enqueued} elements."
+			self.logger.info(
+				f"Processed page '{parent_url.replace(self.home_url,'')}', pending: {len(queue)}, enqueued: {total_enqueued}, elements: {total_elements}"
 			)
 			sleep(self.sleep_time)
 
