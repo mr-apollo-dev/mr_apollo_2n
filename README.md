@@ -8,7 +8,7 @@ Package for exhaustively and efficiently mapping and analyzing website structure
 # pyenv uninstall 3.10.12
 pyenv install 3.10 -f
 # pyenv virtualenv-delete mr_apollo_2n
-pyenv virtualenv 3.10 mr_apollo_2n
+pyenv virtualenv 3.8 mr_apollo_2n
 pyenv local mr_apollo_2n
 pip install --upgrade pip
 pip install poetry==1.7.1
